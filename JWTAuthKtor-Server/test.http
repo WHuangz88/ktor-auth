@@ -1,0 +1,23 @@
+GET http://localhost:8080/authenticate
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJ1c2VycyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJleHAiOi0yMDM3OTQ3MDc5NDMzMTA1LCJ1c2VySWQiOiI2M2E4MzMwNjUyYjZmMzFmNmE4NjU3ZjkifQ.lMcmK52m0YdFkG_dni2_0pOvZv4cZNm_Q-6b7j242Ag
+
+### Sign up
+POST http://localhost:8080/signup
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "whuangz",
+  "password": "test12345"
+}
+
+### Sign In
+POST http://localhost:8080/signin
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "whuangz",
+  "password": "test12345"
+}

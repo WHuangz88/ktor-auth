@@ -1,0 +1,12 @@
+ktor:
+    application:
+        modules:
+            - xyz.whuangz.ApplicationKt.module
+    deployment:
+        port: 8080
+
+jwt:
+    issuer: "http://0.0.0.0:8080"
+    domain: "http://0.0.0.0:8080"
+    audience: "users"
+    realm: "ktor example"
